@@ -19,11 +19,12 @@ public class HttpGet extends AsyncTask<Void,Void,String> {
     private Activity mParentActivity;
     private ProgressDialog mDialog = null;
 
-    private String mUri = "http://192.168.0.11/~pi/test.php";
+    private String mUri = "";
 
-    public HttpGet(Activity parentActivity, TextView textView) {
+    public HttpGet(Activity parentActivity, TextView textView , String url) {
         this.mParentActivity = parentActivity;
         this.mTextView = textView;
+        this.mUri = url;
     }
 
     @Override
