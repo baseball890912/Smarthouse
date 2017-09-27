@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,15 +8,15 @@
     tools:context="com.example.kawamura.kotlinscraping.MainActivity">
 
     <ImageView
-        android:layout_width="405dp"
-        android:layout_height="526dp"
+        android:layout_width="604dp"
+        android:layout_height="837dp"
         android:id="@+id/imageView"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:src="@drawable/back"
         android:scaleType="centerCrop"
         tools:layout_editor_absoluteY="-7dp"
-        tools:layout_editor_absoluteX="-9dp" />
+        tools:layout_editor_absoluteX="-6dp" />
 
     <TextView
         android:id="@+id/textView"

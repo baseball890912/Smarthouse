@@ -43,7 +43,12 @@ class GraphLineActivity : Activity() {
                 return true
             }
             R.id.item3 -> {
-                val intent = Intent(application, ScrapingActivity::class.java)
+                val intent = Intent(application, NewsActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            R.id.item4 -> {
+                val intent = Intent(application, MarketActivity::class.java)
                 startActivity(intent)
                 return true
             }

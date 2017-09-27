@@ -11,7 +11,7 @@ import android.view.Menu
 import android.view.MenuItem
 
 
-class MainActivity : AppCompatActivity() , View.OnClickListener {
+class MainActivity : AppCompatActivity() /*, View.OnClickListener*/ {
     private var mReturnTextView: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
     }
 
 
+    /*
     override fun onClick(v: View) {
         if (v.id === R.id.button) {
             val scraping = Scraping(this,mReturnTextView!!)
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
             startActivity(intent)
         }
     }
+    */
 
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -60,9 +62,14 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
                 return true
             }
             R.id.item3 -> {
-               val intent = Intent(application, ScrapingActivity::class.java)
-               startActivity(intent)
-               return true
+                val intent = Intent(application, NewsActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            R.id.item4 -> {
+                val intent = Intent(application, MarketActivity::class.java)
+                startActivity(intent)
+                return true
             }
         }
         return super.onOptionsItemSelected(item)
